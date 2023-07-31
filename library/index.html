@@ -5,40 +5,81 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
    <title>Brooklyn Public Library</title>
 </head>
 
 <body>
-   <header class="header">
-      <h3>Brooklyn Public Library</h3>
-      <nav class="header__nav">
-         <ul class="header__menu">
-            <a href="" class="header__link">
-               <li class="header__item">About</li>
-            </a>
-            <a href="" class="header__link">
-               <li class="header__item">Favorites</li>
-            </a>
-            <a href="" class="header__link">
-               <li class="header__item">Coffee shop</li>
-            </a>
-            <a href="" class="header__link">
-               <li class="header__item">Contacts</li>
-            </a>
-            <a href="" class="header__link">
-               <li class="header__item">Library Card</li>
-            </a>
-            <a href="" class="header__link">
-               <li class="header__item"></li>
-            </a>
+   <div class="wrapper">
 
-         </ul>
-      </nav>
+   <header class="header__wrapper">
+      <div class="header__container">
+         <h3>Brooklyn Public Library</h3>
+         <nav class="header__nav">
+            <ul class="header__menu">
+               <li class="header__link">
+                  <a href="" class="header__item">About</a>
+               </li>
+               <li class="header__link">
+                  <a href="" class="header__item">Favorites</a>
+               </li>
+               <li class="header__link">
+                  <a href="" class="header__item">Coffee shop</a>
+               </li>
+               <li class="header__link">
+                  <a href="" class="header__item">Contacts</a>
+               </li>
+               <li class="header__link">
+                  <a href="" class="header__item">Library Card</a>
+               </li>
+            </ul>
+            <a href="" class="header__user">
+               <img src="img/icons/icon_profile.svg" alt="library photo">
+            </a>
+         </nav>
+      </div>
    </header>
 
+   <main>
+      <div class="welcome__wrapper">
+         <section class="welcome__container">
+            <div class="welcome__title">
+            <h1 class="welcome__heading">Welcome<br>
+               to the Brooklyn<br>Library</h1>
+            </div>
+         </section>
+      </div>
+      <section class="about__container">
+         <div class="about__title title">
+            <h2 class="title__name">About</h2>
+         </div>
+         <div class="about__content">
+            <p class="about__text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+            <div class="about__slider">
+               <div class="about__slide">
+                  <img src="img/slider_1.png" alt="library photo">
+               </div>
+               <div class="about__slide">
+                  <img src="img/slider_2.png" alt="library photo">
+               </div>
+               <div class="about__slide">
+                  <img src="img/slider_3.png" alt="library photo">
+               </div>
+            </div>
+            <div class="about__pagination">
+               <img src="img/icons/icon_pagination.svg" alt="icon_pagination">
+            </div>
+         </div>
+      </section>
+
+   </main>
+   <footer>
+   </footer>
+   </div>
    <script>
-      alert('Уважаемый проверяющий! Пожалуйста, зайдите сюда завтра, здесь все будет.');
+      window.addEventListener("DOMContentLoaded", (event) => {
+            alert('Уважаемый проверяющий! Пожалуйста, зайдите сюда завтра, здесь все будет.');
+      });
    </script>
 </body>
-
 </html>

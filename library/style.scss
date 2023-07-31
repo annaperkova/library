@@ -1,3 +1,12 @@
+// ПЕРЕМЕННЫЕ ЦВЕТОВ
+:root {
+   --black: #0C0C0E;
+   --gold: #BB945F;
+}
+
+// ШРИФТЫ
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap');
+
 // ОБНУЛЕНИЕ 
 * {
    padding: 0px;
@@ -32,6 +41,7 @@ body {
    line-height: 1;
    font-family: Inter, sans-serif;
    font-size: 16px;
+   background-color: var(--black);
    //text-rendering: optimizeLegibility;
    -ms-text-size-adjust: 100%;
    -moz-text-size-adjust: 100%;
@@ -77,12 +87,134 @@ h6 {
    font-size: inherit;
 }
 
-// ПЕРЕМЕННЫЕ ЦВЕТОВ
+// ОБЩИЕ СТИЛИ
+.wrapper {
+   max-width: 1440px;
+   min-width: 320px;
+   margin: 0 auto;
+}
 
-// ШРИФТЫ
-@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap');
+[class*=__container] {
+   max-width: 1440px;
+   padding: 20px;
+   margin: 0 auto;
+}
+
+.title {
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.title__name {
+   padding: 20px;
+}
+
+h1 {
+   font-family: Forum, serif;
+   font-size: 40px;
+   line-height: 50px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+}
+h2 {
+   font-family: Forum, serif;
+   font-size: 40px;
+   line-height: 40px; /* 100% */
+   letter-spacing: 2px;
+   text-transform: capitalize;
+}
+h3 {
+   font-family: Forum, serif;
+   font-size: 30px;
+   line-height: 50px;
+   letter-spacing: 0.6px;
+   text-transform: capitalize;
+}
+h4 {
+   font-family: Forum, serif;
+   font-size: 30px;
+   letter-spacing: 0.6px;
+}
+h5 {
+   font-family: Forum, serif;
+   font-size: 20px;
+   line-height: 40px;
+   letter-spacing: 2px;
+   text-transform: capitalize;
+}
+h6 {
+   font-family: Inter;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 40px;
+   letter-spacing: 2px;
+   text-transform: capitalize;
+}
+
 
 // HEADER
+.header__wrapper {
+   background-color: var(--black);
+}
+
+.header__container {
+   display: flex;
+   color: white;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__nav {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 40px;
+}
+
+.header__menu {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 30px;
+}
 
 
+// WELCOME
+.welcome__wrapper {
+   background: url('img/welcome.png') 0 0 / contain no-repeat;
+}
 
+.welcome__title {
+   padding: 220px 0 160px 0;
+   width: fit-content;
+}
+
+.welcome__heading {
+   padding: 35px 40px;
+   text-align: center;
+   color: white;
+   background-color: var(--black);
+}
+
+// ABOUT
+.about__container {
+   text-align: center;
+   background-color: white;
+}
+
+.about__text {
+   margin-bottom: 20px;
+}
+
+.about__slider {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 25px;
+   margin-bottom: 40px;
+}
+
+.about__slide img {
+   max-height: 560px;
+}
